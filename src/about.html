@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="output.css" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+<body>
+    <nav class="flex w-full relative justify-between items-center space-x-2 p-3 my-3 shadow-md">
+        <img class="w-20 h-20" src="logo.png" alt="">
+        <div class="hidden md:block">
+          <ul class="flex space-x-3 text-xl">
+            <li><a class="text-xl p-2 pb-4 hover:border-b-4 hover:border-blue-500 transition-border-width transition-colors duration-900 ease-in-out" href="about.html">A propos</a></li>
+            <li><a class="text-xl p-2  pb-4 hover:border-b-4 hover:border-blue-500 transition-border-width transition-colors duration-700 ease-in-out" href="blog.html">Activités</a></li>
+            <li><a class="text-xl p-2  pb-4 hover:border-b-4 hover:border-blue-500 transition-border-width transition-colors duration-700 ease-in-out" href="">Partenaires</a></li>
+            <li><a class="text-xl p-2  pb-4 hover:border-b-4 hover:border-blue-500 transition-border-width transition-colors duration-700 ease-in-out" href="contact.html">Contacter</a></li>
+            <li><a class="text-xl p-2  pb-4 hover:border-b-4 hover:border-blue-500 transition-border-width transition-colors duration-700 ease-in-out" href="">Rapports</a></li>
+          </ul>
+        </div>
+        <button
+        id="menu-toggle"
+        onclick="toggleMenu()"
+             class=" block hamburger mr-4 md:hidden"
+           >
+             <span class="hamburger-top h-48 bg-black "></span>
+             <span class="hamburger-middle"></span>
+             <span class="hamburger-bottom"></span>
+           </button>
+   
+           <div class="md:hidden hidden" id="menu">
+   
+               <div
+                 class=" h-[400px] w-full  absolute z-10 flex flex-col items-center  py-2 space-y-6 font-bold bg-slate-100   sm:self-center inset-0 drop-shadow-md "
+                 id="links"
+               >
+               <button
+             class=" block open  hamburger mr-4 md:hidden  left-[150px]"
+             onclick="close()"
+           >
+             <span class="hamburger-top h-48 bg-black "></span>
+             <span class="hamburger-middle"></span>
+             <span class="hamburger-bottom"></span>
+           </button>
+               <img class="w-20 h-20" src="logo.png" alt="">
+                 <a href="" class="hover:text-red-400  text-secondary">A propos</a>
+                 <a href="" class="hover:text-red-400  text-secondary">Activités</a>
+                 <a href="" class="hover:text-red-400  text-secondary"
+                   >Nos réalisations</a
+                 >
+                 <a href="" class="hover:text-red-400  text-secondary">Partenaires</a>
+                 <a href="" class="hover:text-red-400  text-secondary">Contacter</a>
+                 <a href="" class="hover:text-red-400  text-secondary">Rapport</a>
+               </div>
+             </div>
+     </nav>
+     <section id="about">
+        <h1 id="reveal-text" class="text-4xl text-center font-bold mt-8 text-blue-500">Apropos de HOPE AND PEACE</h1>
+         <div class=" w-auto flex flex-col justify-center items-center space-y-3">
+            <p class="justify-items-center whitespace-nowrap md:text-center  text-xl text-slate-200 tracking-wider p-4 m-4 md:w-full">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dolores vitae. Blanditiis aut quod consequuntur repellat consectetur iure dignissimos voluptas, exercitationem hic qui laborum doloremque explicabo eum nesciunt! Natus, sapiente!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, voluptas. Reiciendis alias eum minima officia expedita aliquid pariatur nam, asperiores tenetur recusandae natus facilis nesciunt perspiciatis ratione obcaecati quam dignissimos.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dolores vitae. Blanditiis aut quod consequuntur repellat consectetur iure dignissimos voluptas, exercitationem hic qui laborum doloremque explicabo eum nesciunt! Natus, sapiente!
+            </p>
+            <img src="image2.jpg" alt="">
+         </div>
+
+     </section>
+     <section id="team" class="h-84">
+
+        <div class="flex flex-col justify-center ">
+          <h1 id="reveal-text" class="text-4xl text-center font-bold mt-8 text-blue-500">Notre Equipe</h1>
+            <div class="flex flex-col justify-center items-center  p-3 md:flex-row">
+               <div class="flex flex-col shadow-md p-4 m-3">
+                  <img src="image.jpg" alt="" class="rounded-full w-40 h-40">
+                  <h1  class=" font-bold text-center my-3">Pascal Ndiaye</h1>
+                  <p class="p-1 text-center">Project Manager</p>
+        </div>
+        <div class="flex flex-col justify-center items-center  p-3 md:flex-row">
+            <div class="flex flex-col shadow-md p-4 m-3">
+               <img src="image.jpg" alt="" class="rounded-full w-40 h-40">
+               <h1  class=" font-bold text-center my-3">Pascal Ndiaye</h1>
+               <p class="p-1 text-center">Project Manager</p>
+     </div>
+     <div class="flex flex-col justify-center items-center  p-3 md:flex-row">
+        <div class="flex flex-col shadow-md p-4 m-3">
+           <img src="image.jpg" alt="" class="rounded-full w-40 h-40">
+           <h1  class=" font-bold text-center my-3">Pascal Ndiaye</h1>
+           <p class="p-1 text-center">Project Manager</p>
+ </div>
+ <div class="flex flex-col justify-center items-center  p-3 md:flex-row">
+    <div class="flex flex-col shadow-md p-4 m-3">
+       <img src="image.jpg" alt="" class="rounded-full w-40 h-40">
+       <h1  class=" font-bold text-center my-3">Pascal Ndiaye</h1>
+       <p class="p-1 text-center">Project Manager</p>
+</div>
+<div class="flex flex-col justify-center items-center  p-3 md:flex-row">
+    <div class="flex flex-col shadow-md p-4 m-3">
+       <img src="image.jpg" alt="" class="rounded-full w-40 h-40">
+       <h1  class=" font-bold text-center my-3">Pascal Ndiaye</h1>
+       <p class="p-1 text-center">Project Manager</p>
+</div>
+</section>
+
+     <footer class="bg-gray-900 text-white py-6">
+        <div class="container flex flex-col justify-between   space-x-2 md:flex-row p-4">
+          <div class="flex flex-col space-y-4">
+            <h1 class="m-3 text-xl ">Accès Rapide  </h1>
+            <ul class="">
+              <li class="m-3"><a href="">A propos </a></li>
+              <li class="m-3"><a href="">Activités</a></li>
+              <li class="m-3"><a href="">Partenaires</a></li>
+              <li class="m-3"><a href="">Contact</a></li>
+             </ul>
+          </div>
+          <div class="flex flex-col space-y-4">
+            <h1 class="m-3 text-xl ">Activités </h1>
+            <ul class="">
+              <li class="m-3"><a href="">Activité 1 </a></li>
+              <li class="m-3"><a href="">Activité 1 </a></li>
+              <li class="m-3"><a href="">Activité 1 </a></li>
+              <li class="m-3"><a href="">Activité 1 </a></li>
+             </ul>
+          </div>
+          <div class="flex flex-col space-y-4">
+            <h1 class="m-3 text-xl ">Contact</h1>
+            <ul class="">
+              <li class="m-3"><a href="">Activité 1 </a></li>
+              <li class="m-3"><a href="">Activité 1 </a></li>
+              <li class="m-3"><a href="">Activité 1 </a></li>
+              <li class="m-3"><a href="">Activité 1 </a></li>
+             </ul>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center md:flex-row align-center m-3 w-full mx-2">
+          <img src="logo.png" class="w-20 h-20" alt="">
+          <button class="bg-red-400 hover:bg-red-500 text-white font-bold py-2 px-4 rounded-full mt-8">Contact</button>
+          <p class="m-3">Bukavu , RDC</p>
+        </div>
+        <div class="my-9">
+          <p class="text-center ">2024@copyright - Tous droits réservés</p>
+        </div>
+      </footer>
+</body>
+</html>
